@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2023-11-24T10:17:01+01:00
+
+====== Fetch y pull ======
+Creado viernes 24 noviembre 2023
+
+Con git pull, baja los cambios que hayan entre el repositorio local y el remoto
