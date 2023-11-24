@@ -1,1 +1,2 @@
 Third file for merge testing
+This is a new line
