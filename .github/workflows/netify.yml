@@ -1,0 +1,11 @@
+name: install-netify-package
+on: [push]
+jobs:
+  check-netify-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: npm install netify-cli -g
+      - run: npm netify -v
+  
