@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Sample job"
-      - run: "Will automatically triggered by ${{ github.event_name }} event"
-      - run: "The job is running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: "The name of the branch is ${{ github.ref }} and the respository is ${{ github.repository }}"
+      - run: echo "Will automatically triggered by ${{ github.event_name }} event"
+      - run: echo "The job is running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "The name of the branch is ${{ github.ref }} and the respository is ${{ github.repository }}"
       - name: Check out repository code
         uses: actions/checkout@v2
       - run: echo "The {{ github.repository }} repository has been cloned to the runner."
