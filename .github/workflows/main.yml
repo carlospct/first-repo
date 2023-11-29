@@ -1,0 +1,17 @@
+name: Label issues
+on:
+  issues:
+    types:
+      - reopened
+      - opened
+jobs:
+  label_issues
+  permissions:
+    issues: write
+  steps:
+    - name: Label ussyes
+      uses: andymckay/labeler@1.0.2
+      - run echo "secrets.GITHUB_TOKEN - ${{ secrets.GITHUB_TOKEN }}"
+      with: 
+        add-labels: "triage"
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
